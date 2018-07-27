@@ -1,11 +1,18 @@
 {
-    "presets": [
-        "es2015",
-        "react"
+  "presets": ["es2015", "react"],
+  "plugins": [
+    [
+      "react-intl-auto",
+      {
+        "removePrefix": "app/",
+        "filebase": false
+      }
     ],
-    "plugins": [
-        ["react-intl", {
-            "messagesDir": "./build/messages/"
-        }]
+    [
+      "react-intl",
+      {
+        "messagesDir": "./build/messages/"
+      }
     ]
+  ]
 }
